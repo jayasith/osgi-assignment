@@ -51,13 +51,7 @@ public class RegisterControllerImpl implements RegisterController {
 			vehicles.add(vehicle);
 			
 		} while(isContinue);
-		
-		/*for(Entry<String, Vehicle>  vehicle : vehicles.entrySet()) {
-			System.out.println(vehicle.getValue().getRegistrationNo());
-			System.out.println(vehicle.getValue().getVehicleType());
-			System.out.println(vehicle.getValue().getVehicleModel());
-		}*/
-		
+				
 		for(Vehicle vehicle : vehicles) {
 			System.out.println(vehicle.getRegistrationNo());
 			System.out.println(vehicle.getVehicleType());
@@ -69,4 +63,3 @@ public class RegisterControllerImpl implements RegisterController {
 		return vehicles;
 	}
 }
-
