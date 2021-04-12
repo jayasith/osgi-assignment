@@ -22,7 +22,7 @@ public class vehicleRentalServiceImp implements vehicleRentalService {
 		
 		System.out.println("Welcome");
 		
-		VehicleRentalActivator.paymentservice.print();
+		//VehicleRentalActivator.paymentservice.print();
 		
 		do {
 			System.out.println("what vehicle type you choese? (just type a no) \n 1.Car \n 2.Van \n 4.Bus \n 3.Truck");
