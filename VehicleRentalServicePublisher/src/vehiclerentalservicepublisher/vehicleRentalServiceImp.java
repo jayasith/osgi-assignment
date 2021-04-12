@@ -20,11 +20,7 @@ public class vehicleRentalServiceImp implements vehicleRentalService {
 			String date;
 			
 			System.out.println("Welcome");
-<<<<<<< HEAD
-			
-=======
 
->>>>>>> fb8e16ee48cb947f23dc116a5195848cf696126a
 			
 			do {
 				System.out.println("what vehicle type you choese? (just type a no) \n  1.Car \n 2.Van \n 3.Truck \n 4.Bus ");
