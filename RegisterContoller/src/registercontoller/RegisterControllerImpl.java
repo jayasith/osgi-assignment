@@ -23,7 +23,7 @@ public class RegisterControllerImpl implements RegisterController {
 		String vehicleModel;
 		
 		do {
-			System.out.println("- Please enter your vehicle details -");
+			System.out.println("* Please enter your vehicle details *");
 			System.out.print("Owner's name: ");
 			ownerName = scanner.nextLine();
 			
@@ -55,6 +55,10 @@ public class RegisterControllerImpl implements RegisterController {
 			System.out.println(vehicle.getVehicleType());
 			System.out.println(vehicle.getVehicleModel());
 		}
+	}
+	
+	public ArrayList<Vehicle> getVehicle() {
+		return vehicles;
 	}
 }
 
