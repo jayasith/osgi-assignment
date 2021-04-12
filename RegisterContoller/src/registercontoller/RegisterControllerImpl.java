@@ -57,7 +57,7 @@ public class RegisterControllerImpl implements RegisterController {
 		}
 	}
 	
-	public ArrayList<Vehicle> getVehicle() {
+	public ArrayList<Vehicle> getVehicles() {
 		return vehicles;
 	}
 }
