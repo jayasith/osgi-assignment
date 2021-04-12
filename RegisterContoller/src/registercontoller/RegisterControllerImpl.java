@@ -1,12 +1,14 @@
 package registercontoller;
 
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
 import models.Vehicle;
 
 public class RegisterControllerImpl implements RegisterController {
-	ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+	
+    ArrayList <Vehicle>vehicles = new ArrayList<>();
 	Scanner scanner = new Scanner(System.in);
 	
 	public RegisterControllerImpl() {
@@ -50,7 +52,13 @@ public class RegisterControllerImpl implements RegisterController {
 			
 		} while(isContinue);
 		
-		for(Vehicle vehicle: vehicles) {
+		/*for(Entry<String, Vehicle>  vehicle : vehicles.entrySet()) {
+			System.out.println(vehicle.getValue().getRegistrationNo());
+			System.out.println(vehicle.getValue().getVehicleType());
+			System.out.println(vehicle.getValue().getVehicleModel());
+		}*/
+		
+		for(Vehicle vehicle : vehicles) {
 			System.out.println(vehicle.getRegistrationNo());
 			System.out.println(vehicle.getVehicleType());
 			System.out.println(vehicle.getVehicleModel());
