@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: VehicleRentalServicePublisher
-Bundle-SymbolicName: VehicleRentalServicePublisher
+Bundle-SymbolicName: VehicleRentalService
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: vehiclerentalservicepublisher.VehicleRentalActivator
+Bundle-Activator: vehiclerentalservice.VehicleRentalActivator
 Bundle-RequiredExecutionEnvironment: JavaSE-13
 Automatic-Module-Name: VehicleRentalServicePublisher
 Import-Package: org.osgi.framework;version="1.3.0"

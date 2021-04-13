@@ -1,4 +1,4 @@
-package vehiclerentalservicepublisher;
+package vehiclerentalservice;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
@@ -6,11 +6,6 @@ import org.osgi.framework.ServiceRegistration;
 
 public class VehicleRentalActivator implements BundleActivator {
 
-//	private static BundleContext context;
-//
-//	static BundleContext getContext() {
-//		return context;
-//	}
 	ServiceRegistration vehiclerental;
 	static String home;
 

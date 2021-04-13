@@ -2,21 +2,21 @@ package checkvehicleavailability;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceRegistration;
 
 public class CheckVehicleAvailabilityActivator implements BundleActivator {
-	ServiceRegistration<?> vehicleAvailability;
-	
-	@Override
-	public void start(BundleContext context) throws Exception {
-		System.out.println("Starting vehicle availability check...");
-		CheckVehicleAvailability checkVehicleAvailability = new CheckVehicleAvailabilityImpl();
-		vehicleAvailability = context.registerService(CheckVehicleAvailability.class.getName(), checkVehicleAvailability, null);
+
+	private static BundleContext context;
+
+	static BundleContext getContext() {
+		return context;
 	}
-	
-	@Override
-	public void stop(BundleContext context) throws Exception {
-		System.out.println("Stopping vehicle availability check...");
+
+	public void start(BundleContext bundleContext) throws Exception {
+		CheckVehicleAvailabilityActivator.context = bundleContext;
+	}
+
+	public void stop(BundleContext bundleContext) throws Exception {
+		CheckVehicleAvailabilityActivator.context = null;
 	}
 
 }
